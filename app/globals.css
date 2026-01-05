@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+:root {
+  /* GammaSweep Brand Colors */
+  --gamma-blue: #485BFF;
+  --gamma-dark: #15182F;
+  --gamma-dark-blue: #2E29A6;
+  --gamma-light: #F0F3FF;
+  --gamma-aquamarine: #15F5BA;
+  --gamma-dust-aquamarine: #96E9C6;
+  
+  --background: #ffffff;
+  --foreground: #15182F;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-gamma-blue: var(--gamma-blue);
+  --color-gamma-dark: var(--gamma-dark);
+  --color-gamma-dark-blue: var(--gamma-dark-blue);
+  --color-gamma-light: var(--gamma-light);
+  --color-gamma-aquamarine: var(--gamma-aquamarine);
+  --color-gamma-dust-aquamarine: var(--gamma-dust-aquamarine);
+  
+  --font-roboto: var(--font-roboto);
+  --font-akceler-header: var(--font-akceler-header);
+  --font-akceler-subheader: var(--font-akceler-subheader);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-roboto), 'Roboto', sans-serif;
+}
+
+/* Typography Classes */
+.font-header {
+  font-family: var(--font-akceler-header), 'Roboto', sans-serif;
+  font-weight: 900;
+}
+
+.font-subheader {
+  font-family: var(--font-akceler-subheader), 'Roboto', sans-serif;
+  font-weight: 500;
+}
+
+.font-body {
+  font-family: var(--font-roboto), 'Roboto', sans-serif;
+  font-weight: 400;
+}
+
+.font-body-bold {
+  font-family: var(--font-roboto), 'Roboto', sans-serif;
+  font-weight: 700;
+}
